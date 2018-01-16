@@ -2,23 +2,18 @@ import React, { Component } from 'react';
 import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
 import Meteor, { connectMeteor, MeteorListView } from 'react-native-meteor';
 
-class MeteorListViewComponent extends Component {
-
-
-  renderRow(item) {
+class CarListViewComponent extends Component {
+	renderRow(car) {
     return (
       <View style={styles.row}>
-        <Text style={styles.rowText}>{item.name}</Text>
-        <TouchableOpacity onPress={() => Meteor.call('changeStatus', item._id, 'okk')}>
-          <Text style={[styles.rowText, styles.deleteText]}>X</Text>
-        </TouchableOpacity>
+        <Text style={styles.rowText}>{car.name}</Text>
       </View>
     );
   }
 
   render() {
-    const { itemsReady } = this.props;
-    if (!itemsReady) {
+    const { carsReady } = this.props;
+    if (!carsReady) {
       return (
         <View>
           <Text>Loading...</Text>
@@ -31,18 +26,19 @@ class MeteorListViewComponent extends Component {
         
 
         <MeteorListView
-          collection="items"
+          collection="cars"
           style={styles.container}
-          selector={{status:'suggested'}}
+          /*selector={{status:'iddlee'}}*/
           options={{sort: {createdAt: -1}}}
           renderRow={this.renderRow}
         />
       </View>
     );
   }
+
 }
 
-export default MeteorListViewComponent;
+export default CarListViewComponent;
 
 const styles = StyleSheet.create({
   container: {
