@@ -1,0 +1,52 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js add @shoutem/ui
+
+PATH: 
+  C:\Program Files\Expo XDE\resources\app\node_modules\xdl\binaries\windows\adb;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x86;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x64;C:\Program Files\Git\cmd;C:\Program Files (x86)\OpenSSH\bin;C:\ProgramData\chocolatey\bin;C:\tools\python2;C:\Program Files (x86)\Windows Live\Shared;C:\Program Files (x86)\Skype\Phone\;C:\ProgramData\chocolatey\lib\Elixir/bin;C:\Program Files (x86)\Yarn\bin;C:\Program Files\nodejs\;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;%SystemRoot%\system32;%SystemRoot%;%SystemRoot%\System32\Wbem;%SYSTEMROOT%\System32\WindowsPowerShell\v1.0\;C:\Users\Ramon Valente\AppData\Local\.meteor\;C:\Users\Ramon Valente\AppData\Local\Microsoft\WindowsApps;C:\Users\Ramon Valente\AppData\Local\Yarn\bin;C:\Users\Ramon Valente\AppData\Local\Google\Cloud SDK\google-cloud-sdk\bin;C:\Users\Ramon Valente\AppData\Roaming\npm;
+
+Yarn version: 
+  0.24.6
+
+Node version: 
+  6.11.1
+
+Platform: 
+  win32 x64
+
+npm manifest: 
+  {
+    "main": "node_modules/expo/AppEntry.js",
+    "private": true,
+    "scripts": {
+      "test": "node ./node_modules/jest/bin/jest.js --watch"
+    },
+    "jest": {
+      "preset": "jest-expo"
+    },
+    "dependencies": {
+      "@expo/samples": "2.1.1",
+      "expo": "^22.0.0",
+      "react": "16.0.0-beta.5",
+      "react-native": "https://github.com/expo/react-native/archive/sdk-22.0.2.tar.gz",
+      "react-native-meteor": "^1.2.0",
+      "react-navigation": "^1.0.0-beta.17"
+    },
+    "devDependencies": {
+      "flow-bin": "0.53.0",
+      "jest-expo": "^22.0.0"
+    },
+    "name": "meteor-linked",
+    "version": "0.0.0",
+    "description": "Hello Expo!",
+    "author": null
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
+
+Trace: 
+  Error: https://github.com/expo/react-native/archive/sdk-22.0.2.tar.gz: unexpected end of file
+      at Zlib._handle.onerror (zlib.js:370:17)
